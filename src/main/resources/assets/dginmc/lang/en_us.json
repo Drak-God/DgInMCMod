@@ -1,0 +1,17 @@
+{
+    "item.dginmc.dg_ingot": "Dg Ingot",
+    "item.dginmc.iron_stick": "Iron Stick",
+
+    "item.dginmc.dg_axe": "Dg Axe",
+    "item.dginmc.dg_hoe": "Dg Hoe",
+    "item.dginmc.dg_pickaxe": "Dg Pickaxe",
+    "item.dginmc.dg_shovel": "Dg Shovel",
+    "item.dginmc.dg_sword": "Dg Sword",
+
+    "item.dginmc.dg_helmet": "Dg Helmet",
+    "item.dginmc.dg_chestplate": "Dg Chestplate",
+    "item.dginmc.dg_leggings": "Dg Leggings",
+    "item.dginmc.dg_boots": "Dg Boots",
+
+    "itemGroup.dg_itemgroup": "Dg Itemgroup"
+}

@@ -1,0 +1,17 @@
+{
+    "item.dginmc.dg_ingot": "Dg锭",
+    "item.dginmc.iron_stick": "铁棒",
+
+    "item.dginmc.dg_axe": "Dg斧",
+    "item.dginmc.dg_hoe": "Dg锄",
+    "item.dginmc.dg_pickaxe": "Dg镐",
+    "item.dginmc.dg_shovel": "Dg锹",
+    "item.dginmc.dg_sword": "Dg剑",
+
+    "item.dginmc.dg_helmet": "Dg头盔",
+    "item.dginmc.dg_chestplate": "Dg胸甲",
+    "item.dginmc.dg_leggings": "Dg护腿",
+    "item.dginmc.dg_boots": "Dg靴子",
+
+    "itemGroup.dg_itemgroup": "Dg物品"
+}
