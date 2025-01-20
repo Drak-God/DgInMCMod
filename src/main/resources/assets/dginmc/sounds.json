@@ -1,0 +1,20 @@
+{
+    "nzdj": {
+        "category": "player",
+        "sounds": [
+            {
+                "name": "dginmc:nzdj",
+                "stream": true
+            }
+        ]
+    },
+    "k": {
+        "category": "player",
+        "sounds": [
+            {
+                "name": "dginmc:k",
+                "stream": true
+            }
+        ]
+    }
+}

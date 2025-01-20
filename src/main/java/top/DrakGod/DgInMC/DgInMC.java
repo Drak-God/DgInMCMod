@@ -4,7 +4,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import top.DrakGod.DgInMC.registers.*;
+import top.DrakGod.DgInMC.register.*;
 
 import org.apache.logging.log4j.*;
 

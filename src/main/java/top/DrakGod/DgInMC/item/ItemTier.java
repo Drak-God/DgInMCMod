@@ -1,4 +1,4 @@
-package top.DrakGod.DgInMC.items;
+package top.DrakGod.DgInMC.item;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;

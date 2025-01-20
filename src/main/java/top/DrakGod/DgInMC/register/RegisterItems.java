@@ -1,13 +1,13 @@
-package top.DrakGod.DgInMC.registers;
+package top.DrakGod.DgInMC.register;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.*;
 import top.DrakGod.DgInMC.DgInMC;
-import top.DrakGod.DgInMC.items.*;
+import top.DrakGod.DgInMC.item.*;
 
-public class RegisterItems {
+public class RegisterItems extends TemplateArgs {
         public static ItemGroup DgItemGroup = new ItemGroup("dg_itemgroup") {
                 @Override
                 public ItemStack makeIcon() {
@@ -25,22 +25,24 @@ public class RegisterItems {
         public RegistryObject<Item> Iron_Stick = RegisterItem("iron_stick", TemplateItems.Create());
 
         public RegistryObject<Item> Dg_Axe = RegisterItem("dg_axe",
-                        TemplateItems.Create(AxeItem.class, TemplateArgs.Tier_Axe));
+                        TemplateItems.Create(AxeItem.class, Tier_Axe));
         public RegistryObject<Item> Dg_Hoe = RegisterItem("dg_hoe",
-                        TemplateItems.Create(HoeItem.class, TemplateArgs.Tier_Tool));
+                        TemplateItems.Create(HoeItem.class, Tier_Tool));
         public RegistryObject<Item> Dg_Pickaxe = RegisterItem("dg_pickaxe",
-                        TemplateItems.Create(PickaxeItem.class, TemplateArgs.Tier_Tool));
+                        TemplateItems.Create(PickaxeItem.class, Tier_Tool));
         public RegistryObject<Item> Dg_Shovel = RegisterItem("dg_shovel",
-                        TemplateItems.Create(ShovelItem.class, TemplateArgs.Tier_Tool));
+                        TemplateItems.Create(ShovelItem.class, Tier_Tool));
         public RegistryObject<Item> Dg_Sword = RegisterItem("dg_sword",
-                        TemplateItems.Create(SwordItem.class, TemplateArgs.Tier_Sword));
+                        TemplateItems.Create(SwordItem.class, Tier_Sword));
 
         public RegistryObject<Item> Dg_Helmet = RegisterItem("dg_helmet",
-                        TemplateItems.Create(TemplateArgs.Armor("dginmc:dg_armor"), EquipmentSlotType.HEAD));
+                        TemplateItems.Create(Armor(DgInMC.Mod_ID + ":dg_armor"), EquipmentSlotType.HEAD));
         public RegistryObject<Item> Dg_Chestplate = RegisterItem("dg_chestplate",
-                        TemplateItems.Create(TemplateArgs.Armor("dginmc:dg_armor"), EquipmentSlotType.CHEST));
+                        TemplateItems.Create(Armor(DgInMC.Mod_ID + ":dg_armor"), EquipmentSlotType.CHEST));
         public RegistryObject<Item> Dg_Leggings = RegisterItem("dg_leggings",
-                        TemplateItems.Create(TemplateArgs.Armor("dginmc:dg_armor"), EquipmentSlotType.LEGS));
+                        TemplateItems.Create(Armor(DgInMC.Mod_ID + ":dg_armor"), EquipmentSlotType.LEGS));
         public RegistryObject<Item> Dg_Boots = RegisterItem("dg_boots",
-                        TemplateItems.Create(TemplateArgs.Armor("dginmc:dg_armor"), EquipmentSlotType.FEET));
+                        TemplateItems.Create(Armor(DgInMC.Mod_ID + ":dg_armor"), EquipmentSlotType.FEET));
+
+        public RegistryObject<Item> Dg_Heart = RegisterItem("dg_heart", new DgHeart());
 }

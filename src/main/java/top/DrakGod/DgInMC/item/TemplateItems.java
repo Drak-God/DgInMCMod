@@ -1,19 +1,18 @@
-package top.DrakGod.DgInMC.items;
+package top.DrakGod.DgInMC.item;
 
 import java.lang.reflect.Constructor;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
-import net.minecraft.item.Item.Properties;
-import top.DrakGod.DgInMC.DgInMC;
+import net.minecraft.item.Food.Builder;
 
 public class TemplateItems {
-    public static Properties Get_Properties() {
-        return new Properties().tab(DgInMC.DgItemGroup);
+    public static Item Create() {
+        return new Item(TemplateArgs.Get_Properties());
     }
 
-    public static Item Create() {
-        return new Item(Get_Properties());
+    public static Item Create(Builder Builder) {
+        return new Item(TemplateArgs.Get_Properties().food(Builder.build()));
     }
 
     @SuppressWarnings({ "rawtypes" })
@@ -25,9 +24,9 @@ public class TemplateItems {
             Float.valueOf("0");
             Class ParameterType = TypeVariables[1];
             if (ParameterType == int.class) {
-                return (Item) Constructor.newInstance(Tier, 0, Tier.getSpeed(), Get_Properties());
+                return (Item) Constructor.newInstance(Tier, 0, Tier.getSpeed(), TemplateArgs.Get_Properties());
             } else {
-                return (Item) Constructor.newInstance(Tier, 0.0F, Tier.getSpeed(), Get_Properties());
+                return (Item) Constructor.newInstance(Tier, 0.0F, Tier.getSpeed(), TemplateArgs.Get_Properties());
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -36,6 +35,6 @@ public class TemplateItems {
     }
 
     public static ArmorItem Create(ArmorMaterial Material, EquipmentSlotType Slot) {
-        return new ArmorItem(Material, Slot, Get_Properties());
+        return new ArmorItem(Material, Slot, TemplateArgs.Get_Properties());
     }
 }

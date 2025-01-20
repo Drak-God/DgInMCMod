@@ -1,4 +1,4 @@
-package top.DrakGod.DgInMC.items;
+package top.DrakGod.DgInMC.item;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
